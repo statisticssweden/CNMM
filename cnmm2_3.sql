@@ -1,0 +1,71 @@
+USE Metabase
+
+GO
+
+PRINT N'Creating Tables...';
+
+:r tables/MetaAdm.sql
+:r tables/MetabaseInfo.sql
+:r tables/SpecialCharacter.sql
+:r tables/SpecialCharacter_Eng.sql
+:r tables/TimeScale.sql
+:r tables/TimeScale_Eng.sql
+:r tables/TextCatalog.sql
+:r tables/TextCatalog_Eng.sql
+:r tables/DataStorage.sql
+:r tables/Organization.sql
+:r tables/Organization_Eng.sql
+:r tables/Person.sql
+:r tables/MainTable.sql
+:r tables/MenuSelection.sql
+:r tables/MenuSelection_Eng.sql
+:r tables/Link.sql
+:r tables/Link_Eng.sql
+:r tables/LinkMenuSelection.sql
+:r tables/MainTable_Eng.sql
+:r tables/SecondaryLanguage.sql
+:r tables/MainTablePerson.sql
+:r tables/ColumnCode.sql
+:r tables/ColumnCode_Eng.sql
+:r tables/Contents.sql
+:r tables/ContentsTime.sql
+:r tables/Contents_Eng.sql
+:r tables/SubTable.sql
+:r tables/SubTable_Eng.sql
+:r tables/Variable.sql
+:r tables/Variable_Eng.sql
+:r tables/ValuePool.sql
+:r tables/ValuePool_Eng.sql
+:r tables/ValueSet.sql
+:r tables/ValueSet_Eng.sql
+:r tables/Value.sql
+:r tables/Value_Eng.sql
+:r tables/VSValue.sql
+:r tables/VSValue_Eng.sql
+:r tables/Grouping.sql
+:r tables/Grouping_Eng.sql
+:r tables/GroupingLevel.sql
+:r tables/GroupingLevel_Eng.sql
+:r tables/ValueGroup.sql
+:r tables/ValueGroup_Eng.sql
+:r tables/ValueSetGrouping.sql
+:r tables/SubTableVariable.sql
+:r tables/Attribute.sql
+:r tables/Attribute_Eng.sql
+:r tables/MainTableVariableHierarchy.sql
+:r tables/Footnote.sql
+:r tables/Footnote_Eng.sql
+:r tables/FootnoteContents.sql
+:r tables/FootnoteContTime.sql
+:r tables/FootnoteContValue.sql
+:r tables/FootnoteContVbl.sql
+:r tables/FootnoteGrouping.sql
+:r tables/FootnoteMainTable.sql
+:r tables/FootnoteMaintTime.sql
+:r tables/FootnoteMaintValue.sql
+:r tables/FootnoteMenuSel.sql
+:r tables/FootnoteSubTable.sql
+:r tables/FootnoteValue.sql
+:r tables/FootnoteValueSetValue.sql
+:r tables/FootnoteVariable.sql
+
