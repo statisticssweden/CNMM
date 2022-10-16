@@ -1,10 +1,6 @@
 PRINT N'Importing data...';
 
-USE Metabase
-
 GO
-
-
 
 :r metadata/MetaAdm.sql
 :r metadata/MetabaseInfo.data.sql
