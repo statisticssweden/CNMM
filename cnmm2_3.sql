@@ -1,7 +1,3 @@
-USE Metabase
-
-GO
-
 PRINT N'Creating Tables...';
 
 :r tables/MetaAdm.sql
