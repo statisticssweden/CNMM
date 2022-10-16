@@ -7,6 +7,7 @@ do
     then
         echo "setup.sql completed"
         # sleep 60
+
         break
     else
         echo "not ready yet..."
