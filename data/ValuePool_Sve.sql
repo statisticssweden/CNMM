@@ -1,1 +1,2 @@
-INSERT INTO [dbo].[ValuePool_Eng]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'GEOAREAS',N'Geografiskaområden',null,N'script',GETDATE())
+INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'GEOAREAS',N'Geografiskaområden',null,N'script',GETDATE());
+INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'SEX',N'Kön',null,N'script',GETDATE());

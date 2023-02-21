@@ -12,3 +12,4 @@ GO
 :r data/ValuePool.sql
 :r data/ValuePool_Sve.sql
 :r data/value/GEOAREAS.sql
+:r data/value/SEX.sql
