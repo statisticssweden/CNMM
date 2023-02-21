@@ -1,0 +1,1 @@
+INSERT INTO [dbo].[ValuePool_Eng]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'GEOAREAS',N'Geografiskaområden',null,N'script',GETDATE())
