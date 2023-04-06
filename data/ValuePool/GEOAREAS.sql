@@ -1,3 +1,9 @@
+-- Creates the value pool for the values
+INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'GEOAREAS', null, N'Geographical areas', N'Geographical areas', N'L', N'T', null , N'script', GETDATE());
+INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'GEOAREAS',N'Geografiskaområden',null,N'script',GETDATE());
+
+
+-- Creates the values
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES(N'GEOAREAS',N'BE', N'BE',null,null, N'Belgium',null,N'N',N'script',GETDATE()); 
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES(N'GEOAREAS',N'BG', N'BG',null,null, N'Bulgaria',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES(N'GEOAREAS',N'CZ', N'CZ',null,null, N'Czechia',null,N'N',N'script',GETDATE()); 

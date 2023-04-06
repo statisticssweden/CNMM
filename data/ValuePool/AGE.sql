@@ -1,3 +1,9 @@
+-- Creates the value pool for the values
+INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'AGE', null, N'Age', N'The age of the object', N'L', N'T', null , N'script', GETDATE());
+INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'AGE',N'Ålder',null,N'script',GETDATE());
+
+
+-- Creates the values
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES(N'AGE',N'TOTAL', N'A',null,null, N'Total',null,N'N',N'script',GETDATE()); 
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES(N'AGE',N'Y_LT5', N'B',null,null, N'Less than 5 years',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES(N'AGE',N'Y5-9', N'C',null,null, N'From 5 to 9 years',null,N'N',N'script',GETDATE()); 
