@@ -10,7 +10,4 @@ GO
 :r metadata/TimeScale.data.sql
 
 :r data/ValuePool.sql
-:r data/ValuePool_Sve.sql
-:r data/value/GEOAREAS.sql
-:r data/value/SEX.sql
-:r data/value/AGE.sql
+:r data/ValueSet.sql
