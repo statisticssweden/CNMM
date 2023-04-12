@@ -1,3 +1,7 @@
+-- TIME
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) VALUES(N'Time',N'time',N'A period in time',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'TIME',N'tid',N'script',GETDATE());
+
 -- REGION
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) VALUES(N'REGION',N'region',N'A territory',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'REGION',N'region',N'script',GETDATE());

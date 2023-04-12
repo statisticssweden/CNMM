@@ -1,4 +1,4 @@
-﻿CREATE TABLE MenuSelection_Eng ( 
+﻿CREATE TABLE MenuSelection_Sve ( 
 	Menu varchar(80) NOT NULL,
 	Selection varchar(80) NOT NULL,
 	PresText varchar(100),
@@ -11,10 +11,10 @@
 )
 ;
 GO
-ALTER TABLE MenuSelection_Eng ADD CONSTRAINT FK_MenuSelection_Eng_MenuSelection 
+ALTER TABLE MenuSelection_Sve ADD CONSTRAINT FK_MenuSelection_Sve_MenuSelection 
 	FOREIGN KEY (Menu, Selection) REFERENCES MenuSelection (Menu, Selection)
 ;
 GO
-ALTER TABLE MenuSelection_Eng ADD CONSTRAINT PK_MenuSelection_Eng 
+ALTER TABLE MenuSelection_Sve ADD CONSTRAINT PK_MenuSelection_Sve 
 	PRIMARY KEY CLUSTERED (Menu, Selection)
 ;

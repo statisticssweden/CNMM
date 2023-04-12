@@ -10,6 +10,8 @@ GO
 :r metadata/TimeScale.data.sql
 :r metadata/DataStorage.sql
 :r metadata/Variable.sql
+:r metadata/TextCatalog.sql
+:r metadata/MenuSelection.sql
 
 :r data/ValuePool.sql
 :r data/ValueSet.sql
