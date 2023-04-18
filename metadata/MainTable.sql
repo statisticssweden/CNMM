@@ -1,0 +1,1 @@
+:r metadata/MainTable/CENS_HNMGA.sql

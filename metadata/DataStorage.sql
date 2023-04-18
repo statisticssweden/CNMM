@@ -1,0 +1,1 @@
+INSERT INTO [dbo].[DataStorage]([ProductCode],[ServerName],[DatabaseName],[UserId],[LogDate]) VALUES(N'CENSUS',N'',N'Data',N'script',GETDATE());
