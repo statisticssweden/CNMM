@@ -13,3 +13,7 @@ INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUE
 -- SEX 
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) VALUES(N'SEX',N'sex',N'The gender of a object',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'SEX',N'kön',N'script',GETDATE());
+
+-- CITIZENSHIP 
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) VALUES(N'CITIZENSHIP',N'citizenship',N'The citizenship of a object',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'CITIZENSHIP',N'medborgarskap',N'script',GETDATE());
