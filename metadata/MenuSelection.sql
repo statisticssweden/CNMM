@@ -6,3 +6,6 @@ INSERT INTO [dbo].[MenuSelection_Sve]([Menu],[Selection],[PresText],[PresTextS],
 
 INSERT INTO [dbo].[MenuSelection]([Menu],[Selection],[PresText],[PresTextS],[Description],[LevelNo],[SortCode],[Presentation],[MetaId],[UserId],[LogDate]) VALUES(N'PO01',N'CENS_HNMGA',N'',N'',N'',5,N'Population',N'A',null,N'script',GETDATE());
 INSERT INTO [dbo].[MenuSelection_Sve]([Menu],[Selection],[PresText],[PresTextS],[Description],[SortCode],[Presentation],[UserId],[LogDate]) VALUES(N'PO01',N'CENS_HNMGA',null,null,N'',N'',N'A',N'script',GETDATE());
+
+INSERT INTO [dbo].[MenuSelection]([Menu],[Selection],[PresText],[PresTextS],[Description],[LevelNo],[SortCode],[Presentation],[MetaId],[UserId],[LogDate]) VALUES(N'PO01',N'CENS_HNCTZ',N'',N'',N'',5,N'PopulationCTZ',N'A',null,N'script',GETDATE());
+INSERT INTO [dbo].[MenuSelection_Sve]([Menu],[Selection],[PresText],[PresTextS],[Description],[SortCode],[Presentation],[UserId],[LogDate]) VALUES(N'PO01',N'CENS_HNCTZ',null,null,N'',N'',N'A',N'script',GETDATE());
