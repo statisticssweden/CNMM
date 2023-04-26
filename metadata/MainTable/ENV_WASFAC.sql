@@ -6,8 +6,8 @@ INSERT INTO [dbo].[MainTable_Sve]([MainTable],[Status],[Published],[PresText],[P
 INSERT INTO [dbo].[SecondaryLanguage]([MainTable],[Language],[CompletelyTranslated],[Published],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'sv',N'Y',N'Y',N'script',GETDATE());
 
 -- Creates sub table
-INSERT INTO [dbo].[SubTable]([MainTable],[SubTable],[PresText],[CleanTable],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'',N'',N'X',N'script',GETDATE());
-INSERT INTO [dbo].[SubTable_Sve]([MainTable],[SubTable],[PresText],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'',N'',N'script',GETDATE());
+INSERT INTO [dbo].[SubTable]([MainTable],[SubTable],[PresText],[CleanTable],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'',N'ENV_WASFAC',N'X',N'script',GETDATE());
+INSERT INTO [dbo].[SubTable_Sve]([MainTable],[SubTable],[PresText],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'',N'ENV_WASFAC',N'script',GETDATE());
 
 -- Creates Sub table variables
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'','REGION','EU_COUNTRIES','G',1,N'script',GETDATE());
