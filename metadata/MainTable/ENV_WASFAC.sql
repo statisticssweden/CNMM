@@ -15,8 +15,9 @@ INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'','TIME',null,'T',3,N'script',GETDATE());
 
 -- Create contents
-INSERT INTO [dbo].[Contents]([MainTable],[Contents],[PresText],[PresTextS],[PresCode],[Copyright],[StatAuthority],[Producer],[LastUpdated],[Published],[Unit],[PresDecimals],[PresCellsZero],[PresMissingLine],[AggregPossible],[RefPeriod],[StockFA],[BasePeriod],[CFPrices],[DayAdj],[SeasAdj],[FootnoteContents],[FootnoteVariable],[FootnoteValue],[FootnoteTime],[StoreColumnNo],[StoreFormat],[StoreNoChar],[StoreDecimals],[MetaId],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'Number',N'Number',N'Number',N'WASFAC',N'1',N'ESTAT',N'ESTAT',GETDATE(),GETDATE(),N'number',0,N'N',null,N'N',null,N'S',null,null,N'N',N'N',N'N',N'N',N'N',N'N',1,N'I',4,0,null,N'script',GETDATE());
-INSERT INTO [dbo].[Contents_Sve]([MainTable],[Contents],[PresText],[PresTextS],[Unit],[RefPeriod],[BasePeriod],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'Antal',N'Antal',N'Antal',N'antal',null,null,N'script',GETDATE());
+INSERT INTO [dbo].[Contents]([MainTable],[Contents],[PresText],[PresTextS],[PresCode],[Copyright],[StatAuthority],[Producer],[LastUpdated],[Published],[Unit],[PresDecimals],[PresCellsZero],[PresMissingLine],[AggregPossible],[RefPeriod],[StockFA],[BasePeriod],[CFPrices],[DayAdj],[SeasAdj],[FootnoteContents],[FootnoteVariable],[FootnoteValue],[FootnoteTime],[StoreColumnNo],[StoreFormat],[StoreNoChar],[StoreDecimals],[MetaId],[UserId],[LogDate]) 
+VALUES(N'ENV_WASFAC',N'Number',N'Number',N'Number',N'WASFAC',N'1',N'ESTAT',N'ESTAT',GETDATE(),GETDATE(),N'number',0,N'N',null,N'N',null,N'S',null,null,N'N',N'N',N'N',N'N',N'N',N'N',1,N'I',4,0,null,N'script',GETDATE());
+INSERT INTO [dbo].[Contents_Sve]([MainTable],[Contents],[PresText],[PresTextS],[Unit],[RefPeriod],[BasePeriod],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'Number',N'Antal',N'Antal',N'antal',null,null,N'script',GETDATE());
 
 -- Creates contents time
 INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('ENV_WASFAC',N'Number',N'2004',N'script',GETDATE());
