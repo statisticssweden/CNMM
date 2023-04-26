@@ -1,5 +1,6 @@
 -- Creates the MainTable
-INSERT INTO [dbo].[MainTable]([MainTable],[TableStatus],[PresText],[PresTextS],[ContentsVariable],[TableId],[PresCategory],[FirstPublished],[SpecCharExists],[SubjectCode],[MetaId],[ProductCode],[TimeScale],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'A',N'Number and capacity of recovery and disposal facilities by NUTS 2 regions',N'Disposal facilities',null,N'ENV_WASFAC',N'O',null,N'N',N'EN',null,N'ENVIRONMENT',N'Year',N'script',GETDATE());
+INSERT INTO [dbo].[MainTable]([MainTable],[TableStatus],[PresText],[PresTextS],[ContentsVariable],[TableId],[PresCategory],[FirstPublished],[SpecCharExists],[SubjectCode],[MetaId],[ProductCode],[TimeScale],[UserId],[LogDate]) 
+VALUES(N'ENV_WASFAC',N'A',N'Number and capacity of recovery and disposal facilities by NUTS 2 regions',N'Disposal facilities',null,N'TAB003',N'O',null,N'N',N'EN',null,N'ENVIRONMENT',N'Year',N'script',GETDATE());
 INSERT INTO [dbo].[MainTable_Sve]([MainTable],[Status],[Published],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) VALUES(N'ENV_WASFAC',N'T',N'Y',N'Antal och kapacitet för återvinnings- och bortskaffningsanläggningar per NUTS 2-regioner',N'Återvinningsanläggning',null,N'script',GETDATE());
 
 -- Set translation status
