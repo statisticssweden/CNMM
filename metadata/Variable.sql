@@ -18,6 +18,12 @@ INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUE
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) VALUES(N'CITIZENSHIP',N'citizenship',N'The citizenship of an object',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'CITIZENSHIP',N'medborgarskap',N'script',GETDATE());
 
--- WASTE OPERATION
-INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) VALUES(N'WASTE_OP',N'waste operations',N'The waste operation',null,N'N',N'script',GETDATE());
-INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'WASTE_OP',N'avfallsverksamhet',N'script',GETDATE());
+-- WASTE CATEGORY
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'WASTE_CAT',N'waste category',N'The waste categories',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'WASTE_CAT',N'avfallskategori',N'script',GETDATE());
+
+-- TREATMENT CATEGORY 
+--INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+--VALUES(N'TREATMENT_CAT',N'treatment category',N'The treatment categories',null,N'N',N'script',GETDATE());
+--INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'TREATMENT_CAT',N'behandlingskategori',N'script',GETDATE());
