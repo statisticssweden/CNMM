@@ -3,3 +3,4 @@
 :r metadata/ValueSet/AGE_5_MIX.sql
 :r metadata/ValueSet/CITIZENSHIP.sql
 :r metadata/ValueSet/WASTE_CAT.sql
+:r metadata/ValueSet/TREATMENT_CAT.sql

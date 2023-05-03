@@ -12,7 +12,7 @@ INSERT INTO [dbo].[SubTable]([MainTable],[SubTable],[PresText],[CleanTable],[Use
 INSERT INTO [dbo].[SubTable_Sve]([MainTable],[SubTable],[PresText],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'',N'MI0305T02N',N'script',GETDATE());
 
 -- Creates Sub table variables
---INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'','TREATMENT_CAT','TREATMENT_CAT','V',1,N'script',GETDATE());
+INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'','TREATMENT_CAT','TREATMENT_CAT','V',1,N'script',GETDATE());
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'','WASTE_CAT','WASTE_CAT','V',2,N'script',GETDATE());
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'','TIME',null,'T',3,N'script',GETDATE());
 
@@ -22,7 +22,13 @@ VALUES(N'MI0305T02N',N'WasteHazard',N'Treated waste, hazardous (tonnes)',N'Treat
 INSERT INTO [dbo].[Contents_Sve]([MainTable],[Contents],[PresText],[PresTextS],[Unit],[RefPeriod],[BasePeriod],[UserId],[LogDate]) 
 VALUES(N'MI0305T02N',N'WasteHazard',N'Hanterat avfall (farligt)',N'Hanterat avfall (farligt)',N'ton',null,null,N'script',GETDATE());
 
---VALUES(N'MI0305T02N',N'WasteNonHazard',N'Hanterat avfall (farligt)',N'Hanterat avfall (farligt)',N'ton',null,null,N'script',GETDATE());
+INSERT INTO [dbo].[Contents]([MainTable],[Contents],[PresText],[PresTextS],[PresCode],[Copyright],[StatAuthority],[Producer],[LastUpdated],[Published],[Unit],[PresDecimals],[PresCellsZero],[PresMissingLine],[AggregPossible],[RefPeriod],[StockFA],[BasePeriod],[CFPrices],[DayAdj],[SeasAdj],[FootnoteContents],[FootnoteVariable],[FootnoteValue],[FootnoteTime],[StoreColumnNo],[StoreFormat],[StoreNoChar],[StoreDecimals],[MetaId],[UserId],[LogDate]) 
+VALUES(N'MI0305T02N',N'WasteNonHazard',N'Treated waste, non hazardous (tonnes)',N'Treated waste, non hazardous (tonnes)',N'WasteNonHazard',N'1',N'SCB',N'SCB',GETDATE(),GETDATE(),N'tonnes',0,N'N',null,N'N',null,N'S',null,null,N'N',N'N',N'N',N'N',N'N',N'N',1,N'I',4,0,null,N'script',GETDATE());
+INSERT INTO [dbo].[Contents_Sve]([MainTable],[Contents],[PresText],[PresTextS],[Unit],[RefPeriod],[BasePeriod],[UserId],[LogDate]) 
+VALUES(N'MI0305T02N',N'WasteNonHazard',N'Hanterat avfall (ofarligt)',N'Hanterat avfall (ofarligt)',N'ton',null,null,N'script',GETDATE());
+
+
+--
 
 -- Creates contents time
 INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('MI0305T02N',N'WasteHazard',N'2010',N'script',GETDATE());

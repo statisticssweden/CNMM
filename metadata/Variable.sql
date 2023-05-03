@@ -24,6 +24,6 @@ VALUES(N'WASTE_CAT',N'waste category',N'The waste categories',null,N'N',N'script
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'WASTE_CAT',N'avfallskategori',N'script',GETDATE());
 
 -- TREATMENT CATEGORY 
---INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
---VALUES(N'TREATMENT_CAT',N'treatment category',N'The treatment categories',null,N'N',N'script',GETDATE());
---INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'TREATMENT_CAT',N'behandlingskategori',N'script',GETDATE());
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'TREATMENT_CAT',N'treatment category',N'The treatment categories',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'TREATMENT_CAT',N'behandlingstyp',N'script',GETDATE());
