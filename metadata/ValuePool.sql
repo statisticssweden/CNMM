@@ -4,3 +4,5 @@
 :r metadata/ValuePool/CITIZENSHIP.sql
 :r metadata/ValuePool/WASTE_CAT.sql
 :r metadata/ValuePool/TREATMENT_CAT.sql
+:r metadata/ValuePool/SECTOR.sql
+:r metadata/ValuePool/GREENHOUSEGAS.sql

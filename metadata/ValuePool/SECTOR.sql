@@ -1,0 +1,36 @@
+-- Creates the value pool for the values
+INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'SECTOR', null, N'Sector', N'Sector', N'L', N'T', null , N'script', GETDATE());
+INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'SECTOR',N'Sektor',null,N'script',GETDATE());
+
+
+-- Creates the values
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','0.1', '0.1',null,null, 'NATIONAL TOTAL (excluding LULUCF, excluding international transports)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','0.2', '0.2',null,null, 'NATIONAL TOTAL (excluding LULUCF, including international transports)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','0.3', '0.3',null,null, 'NATIONAL TOTAL (including LULUCF, excluding international transports)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','0.4', '0.4',null,null, 'NATIONAL TOTAL (including LULUCF, including international transports)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','1.0', '1.0',null,null, 'OFF-ROAD VEHICLES AND OTHER MACHINERY, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','10.0', '10.0',null,null, 'LAND-USE, LAND-USE CHANGE AND FORESTRY (LULUCF), TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','2.0', '2.0',null,null, 'WASTE, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','3.0', '3.0',null,null, 'ELECTRICITY AND DISTRICT HEATING, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','4.0', '4.0',null,null, 'INDUSTRY, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','5.0', '5.0',null,null, 'INTERNATIONAL TRANSPORT, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','6.0', '6.0',null,null, 'AGRICULTURE, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','7.0', '7.0',null,null, 'SOLVENT USE AND OTHER PRODUCT USE, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','8.0', '8.0',null,null, 'DOMESTIC TRANSPORT, TOTAL',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('Emission','9.0', '9.0',null,null, 'HEATING OF HOUSES AND PREMISES, TOTAL',null,'N','script',GETDATE());
+
+
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','0.1', '0.1',null,null, 'NATIONELL TOTAL (exklusive LULUCF, exklusive internationella transporter)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','0.2', '0.2',null,null, 'NATIONELL TOTAL (exklusive LULUCF, inklusive internationella transporter)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','0.3', '0.3',null,null, 'NATIONELL TOTAL (inklusive LULUCF, exklusive internationella transporter)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','0.4', '0.4',null,null, 'NATIONELL TOTAL (inklusive LULUCF, inklusive internationella transporter)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','1.0', '1.0',null,null, 'ARBETSMASKINER, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','10.0', '10.0',null,null, 'MARKANVÄNDNING, FÖRÄNDRAD MARKANVÄNDNING OCH SKOGSBRUK (LULUCF), TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','2.0', '2.0',null,null, 'AVFALL, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','3.0', '3.0',null,null, 'EL OCH FJÄRRVÄRME, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','4.0', '4.0',null,null, 'INDUSTRI, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','5.0', '5.0',null,null, 'UTRIKES TRANSPORTER, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','6.0', '6.0',null,null, 'JORDBRUK, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','7.0', '7.0',null,null, 'LÖSNINGSMEDEL OCH ÖVRIG PRODUKTANVÄNDNING, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','8.0', '8.0',null,null, 'INRIKES TRANSPORTER, TOTALT','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('Emission','9.0', '9.0',null,null, 'UPPVÄRMNING AV BOSTÄDER OCH LOKALER, TOTALT','script',GETDATE());

@@ -1,5 +1,5 @@
 -- Creates the value pool for the values
-INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'WASTE_CAT', null, N'WASTE_CAT', N'Waste category', N'L', N'T', null , N'script', GETDATE());
+INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'WASTE_CAT', null, N'Waste category', N'Waste category', N'L', N'T', null , N'script', GETDATE());
 INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'WASTE_CAT',N'Avfallskategori',null,N'script',GETDATE());
 
 

@@ -1,0 +1,29 @@
+-- Creates the value pool for the values
+INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'GREENHOUSEGAS', null, N'Greenhousegas', N'Greenhousegas', N'L', N'T', null , N'script', GETDATE());
+INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'GREENHOUSEGAS',N'Vaxthusgas',null,N'script',GETDATE());
+
+
+-- Creates the values
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CH4', 'CH4',null,null, 'Methane (CH4) (t)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CH4_CO2-ekv.', 'CH4_CO2-ekv.',null,null, 'Methane (CH4) (kt CO2-eqv.)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CO2', 'CO2',null,null, 'Carbon Dioxide (CO2) (kt)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CO2-BIO', 'CO2-BIO',null,null, 'Biogenic carbon dioxide (CO2) from fuels (kt)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CO2-ekv.', 'CO2-ekv.',null,null, 'Total Greenhouse Gases (kt CO2-eqv.)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','HFC', 'HFC',null,null, 'Hydrofluorocarbons (HFCs) (kt CO2-eqv.)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','N2O', 'N2O',null,null, 'Nitrous Oxide (N2O) (t)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','N2O_CO2-ekv.', 'N2O_CO2-ekv.',null,null, 'Nitrous Oxide (N2O) (kt CO2-eqv.)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','PFC', 'PFC',null,null, 'Perfluorocarbons (PFCs) (kt CO2-eqv.)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','SF6', 'SF6',null,null, 'Sulphur Hexafluoride (SF6) (kg)',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('GREENHOUSEGAS','SF6_CO2-ekv.', 'SF6_CO2-ekv.',null,null, 'Sulphur Hexafluoride (SF6) (kt CO2-eqv.)',null,'N','script',GETDATE());
+
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CH4', 'CH4',null,null, 'Metan (CH4) (t)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CH4_CO2-ekv.', 'CH4_CO2-ekv.',null,null, 'Metan (CH4) (kt CO2-ekv.)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CO2', 'CO2',null,null, 'Koldioxid (CO2) (kt)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CO2-BIO', 'CO2-BIO',null,null, 'Biogen koldioxid (CO2) från bränslen (kt)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','CO2-ekv.', 'CO2-ekv.',null,null, 'Totala Växthusgaser (kt CO2-ekv.)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','HFC', 'HFC',null,null, 'Väte-fluor-kol-föreningar (HFCs) (kt CO2-ekv.)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','N2O', 'N2O',null,null, 'Lustgas (N2O) (t)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','N2O_CO2-ekv.', 'N2O_CO2-ekv.',null,null, 'Lustgas (N2O) (kt CO2-ekv.)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','PFC', 'PFC',null,null, 'Fluor-kol-föreningar (PFCs) (kt CO2-ekv.)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','SF6', 'SF6',null,null, 'Svavelhexafluorid (SF6) (kg)','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('GREENHOUSEGAS','SF6_CO2-ekv.', 'SF6_CO2-ekv.',null,null, 'Svavelhexafluorid (SF6) (kt CO2-ekv.)','script',GETDATE());

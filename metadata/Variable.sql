@@ -27,3 +27,13 @@ INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUE
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
 VALUES(N'TREATMENT_CAT',N'treatment category',N'The treatment categories',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'TREATMENT_CAT',N'behandlingstyp',N'script',GETDATE());
+
+-- SECTOR 
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'SECTOR',N'sector',N'Sectors',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'SECTOR',N'sektor',N'script',GETDATE());
+
+-- GREENHOUSE GAS
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'GREENHOUSEGAS',N'green house gas',N'The greenhouse gases',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'GREENHOUSEGAS',N'växthusgas',N'script',GETDATE());
