@@ -12,7 +12,7 @@ INSERT INTO [dbo].[SubTable]([MainTable],[SubTable],[PresText],[CleanTable],[Use
 INSERT INTO [dbo].[SubTable_Sve]([MainTable],[SubTable],[PresText],[UserId],[LogDate]) VALUES(N'TotalEmission',N'',N'TotalEmission',N'script',GETDATE());
 
 -- Creates Sub table variables
-INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'TotalEmission',N'','SECTOR','SECTOR','V',1,N'script',GETDATE());
+INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'TotalEmission',N'','SECTOR','EMISSION','V',1,N'script',GETDATE());
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'TotalEmission',N'','GREENHOUSEGAS','GREENHOUSEGAS','V',2,N'script',GETDATE());
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'TotalEmission',N'','TIME',null,'T',3,N'script',GETDATE());
 
@@ -24,32 +24,38 @@ VALUES(N'TotalEmission',N'Emission',N'Totala utsläpp av växthusgaser',N'Ämne'
 
 
 -- Creates contents time
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1990',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1991',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1992',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1993',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1994',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1995',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1996',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1997',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1998',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'1999',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2000',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2001',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2002',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2003',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2004',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2005',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2006',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2007',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2008',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2009',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2010',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2011',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2012',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2013',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2014',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2015',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2016',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('TotalEmission',N'Emission',N'2017',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1990',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1991',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1992',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1993',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1994',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1995',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1996',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1997',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1998',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'1999',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2000',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2001',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2002',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2003',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2004',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2005',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2006',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2007',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2008',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2009',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2010',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2011',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2012',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2013',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2014',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2015',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2016',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'TotalEmission',N'Emission',N'2017',N'script',GETDATE());
 
+-- Creates Footnote
+INSERT INTO [dbo].[Footnote]([FootnoteNo],[FootnoteType],[ShowFootnote],[MandOpt],[FootnoteText],[PresCharacter],[UserId],[LogDate]) VALUES(1,N'7',N'B',N'O',N'Footnote text',null,N'script',GETDATE());
+INSERT INTO [dbo].[Footnote_Sve]([FootnoteNo] ,[FootnoteText],[UserId],[LogDate]) VALUES (1,N'Text för Fotnot',N'script',GETDATE()); 
+
+-- Links Footnote to Entity
+INSERT INTO [dbo].[FootnoteMainTable] ([MainTable],[FootnoteNo] ,[UserId],[LogDate]) VALUES(N'TotalEmission',1,N'script',GETDATE()); 

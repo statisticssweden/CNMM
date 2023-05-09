@@ -28,10 +28,8 @@ INSERT INTO [dbo].[Contents_Sve]([MainTable],[Contents],[PresText],[PresTextS],[
 VALUES(N'MI0305T02N',N'WasteNonHazard',N'Hanterat avfall (ofarligt)',N'Hanterat avfall (ofarligt)',N'ton',null,null,N'script',GETDATE());
 
 
---
-
 -- Creates contents time
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('MI0305T02N',N'WasteHazard',N'2010',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('MI0305T02N',N'WasteHazard',N'2012',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('MI0305T02N',N'WasteHazard',N'2014',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('MI0305T02N',N'WasteHazard',N'2016',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'WasteHazard',N'2010',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'WasteHazard',N'2012',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'WasteHazard',N'2014',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'WasteHazard',N'2016',N'script',GETDATE());

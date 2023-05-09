@@ -1,6 +1,6 @@
 -- Creates the value pool for the values
-INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'SECTOR', null, N'Sector', N'Sector', N'L', N'T', null , N'script', GETDATE());
-INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'SECTOR',N'Sektor',null,N'script',GETDATE());
+INSERT INTO [dbo].[ValuePool]([ValuePool],[ValuePoolAlias],[PresText],[Description],[ValueTextExists],[ValuePres],[MetaId],[UserId],[LogDate]) VALUES (N'EMISSION', null, N'Emission', N'Emission', N'L', N'T', null , N'script', GETDATE());
+INSERT INTO [dbo].[ValuePool_Sve]([ValuePool],[ValuePoolAlias],[PresText],[UserId],[LogDate])VALUES(N'EMISSION',N'Utsläpp',null,N'script',GETDATE());
 
 
 -- Creates the values

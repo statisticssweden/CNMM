@@ -20,6 +20,6 @@ INSERT INTO [dbo].[Contents]([MainTable],[Contents],[PresText],[PresTextS],[Pres
 INSERT INTO [dbo].[Contents_Sve]([MainTable],[Contents],[PresText],[PresTextS],[Unit],[RefPeriod],[BasePeriod],[UserId],[LogDate]) VALUES(N'CENS_HNMGA',N'POP',N'Befolkning',N'Befolkning',N'antal',null,null,N'script',GETDATE());
 
 -- Creates contents time
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('CENS_HNMGA',N'POP',N'1981',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('CENS_HNMGA',N'POP',N'1991',N'script',GETDATE());
-INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES('CENS_HNMGA',N'POP',N'2001',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'CENS_HNMGA',N'POP',N'1981',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'CENS_HNMGA',N'POP',N'1991',N'script',GETDATE());
+INSERT INTO [dbo].[ContentsTime]([MainTable],[Contents],[TimePeriod],[UserId],[LogDate]) VALUES(N'CENS_HNMGA',N'POP',N'2001',N'script',GETDATE());

@@ -4,5 +4,5 @@
 :r metadata/ValueSet/CITIZENSHIP.sql
 :r metadata/ValueSet/WASTE_CAT.sql
 :r metadata/ValueSet/TREATMENT_CAT.sql
-:r metadata/ValueSet/SECTOR.sql
+:r metadata/ValueSet/EMISSION.sql
 :r metadata/ValueSet/GREENHOUSEGAS.sql
