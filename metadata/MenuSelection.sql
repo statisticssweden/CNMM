@@ -28,3 +28,6 @@ INSERT INTO [dbo].[MenuSelection_Sve]([Menu],[Selection],[PresText],[PresTextS],
 
 INSERT INTO [dbo].[MenuSelection]([Menu],[Selection],[PresText],[PresTextS],[Description],[LevelNo],[SortCode],[Presentation],[MetaId],[UserId],[LogDate]) VALUES(N'EN02',N'TotalEmission',N'',N'',N'',5,N'03',N'A',null,N'script',GETDATE());
 INSERT INTO [dbo].[MenuSelection_Sve]([Menu],[Selection],[PresText],[PresTextS],[Description],[SortCode],[Presentation],[UserId],[LogDate]) VALUES(N'EN02',N'TotalEmission',null,null,N'',N'03',N'A',N'script',GETDATE());
+
+INSERT INTO [dbo].[MenuSelection]([Menu],[Selection],[PresText],[PresTextS],[Description],[LevelNo],[SortCode],[Presentation],[MetaId],[UserId],[LogDate]) VALUES(N'EN02',N'LANDUSE',N'',N'',N'',5,N'03',N'A',null,N'script',GETDATE());
+INSERT INTO [dbo].[MenuSelection_Sve]([Menu],[Selection],[PresText],[PresTextS],[Description],[SortCode],[Presentation],[UserId],[LogDate]) VALUES(N'EN02',N'LANDUSE',null,null,N'',N'03',N'A',N'script',GETDATE());

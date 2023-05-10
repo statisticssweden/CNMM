@@ -6,3 +6,4 @@
 :r metadata/ValuePool/TREATMENT_CAT.sql
 :r metadata/ValuePool/EMISSION.sql
 :r metadata/ValuePool/GREENHOUSEGAS.sql
+:r metadata/ValuePool/LANDUSE.sql

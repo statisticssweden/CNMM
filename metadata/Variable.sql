@@ -20,12 +20,12 @@ INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUE
 
 -- WASTE CATEGORY
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
-VALUES(N'WASTE_CAT',N'waste category',N'The waste categories',null,N'N',N'script',GETDATE());
+VALUES(N'WASTE_CAT',N'waste category',N'Waste categories',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'WASTE_CAT',N'avfallskategori',N'script',GETDATE());
 
 -- TREATMENT CATEGORY 
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
-VALUES(N'TREATMENT_CAT',N'treatment category',N'The treatment categories',null,N'N',N'script',GETDATE());
+VALUES(N'TREATMENT_CAT',N'treatment category',N'Treatment categories',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'TREATMENT_CAT',N'behandlingstyp',N'script',GETDATE());
 
 -- SECTOR 
@@ -35,5 +35,11 @@ INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUE
 
 -- GREENHOUSE GAS
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
-VALUES(N'GREENHOUSEGAS',N'green house gas',N'The greenhouse gases',null,N'N',N'script',GETDATE());
+VALUES(N'GREENHOUSEGAS',N'greenhouse gas',N'Greenhouse gas',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'GREENHOUSEGAS',N'växthusgas',N'script',GETDATE());
+
+-- LAND USE
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'LANDUSE',N'land use',N'Land use',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'LANDUSE',N'markanvändning',N'script',GETDATE());
+

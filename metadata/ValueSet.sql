@@ -6,3 +6,4 @@
 :r metadata/ValueSet/TREATMENT_CAT.sql
 :r metadata/ValueSet/EMISSION.sql
 :r metadata/ValueSet/GREENHOUSEGAS.sql
+:r metadata/ValueSet/LANDUSE.sql
