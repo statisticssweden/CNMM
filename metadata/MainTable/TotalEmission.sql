@@ -59,5 +59,5 @@ INSERT INTO [dbo].[Footnote_Sve]([FootnoteNo] ,[FootnoteText],[UserId],[LogDate]
 
 -- Links Footnote to Entity
 INSERT INTO [dbo].[FootnoteMainTable] ([MainTable],[FootnoteNo] ,[UserId],[LogDate]) VALUES(N'TotalEmission',1,N'script',GETDATE()); 
-INSERT INTO [dbo].[FootnoteVariable] ([Variable],[FootnoteNo] ,[UserId],[LogDate]) VALUES(N'Sector',1,N'script',GETDATE()); 
+INSERT INTO [dbo].[FootnoteVariable] ([Variable],[FootnoteNo] ,[UserId],[LogDate]) VALUES(N'SECTOR',1,N'script',GETDATE()); 
 INSERT INTO [dbo].[FootnoteValue] ([ValuePool],[ValueCode],[FootnoteNo] ,[UserId],[LogDate]) VALUES(N'GREENHOUSEGAS',N'SF6_CO2-ekv.',1,N'script',GETDATE()); 
