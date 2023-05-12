@@ -16,12 +16,12 @@ INSERT INTO [dbo].[SubTable_Sve]([MainTable],[SubTable],[PresText],[UserId],[Log
 
 
 -- Creates Sub table variables
---INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V01','???','???','V',1,N'script',GETDATE());
-INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V01','LANDUSE','LANDUSE','V',2,N'script',GETDATE());
+INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V01','REGION','REGION_COUNTRY','G',1,N'script',GETDATE());
+INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V01','LANDUSECLASS','LANDUSE','V',2,N'script',GETDATE());
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V01','TIME',null,'T',3,N'script',GETDATE());
 
---INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V02','???','???','V',1,N'script',GETDATE());
-INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V02','LANDUSE','LANDUSE','V',2,N'script',GETDATE());
+INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V02','REGION','REGION_MUNICIPALITY','G',1,N'script',GETDATE());
+INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V02','LANDUSECLASS','LANDUSE','V',2,N'script',GETDATE());
 INSERT INTO [dbo].[SubTableVariable]([MainTable],[SubTable],[Variable],[ValueSet],[VariableType],[StoreColumnNo],[UserId],[LogDate]) VALUES(N'LANDUSE',N'V02','TIME',null,'T',3,N'script',GETDATE());
 
 

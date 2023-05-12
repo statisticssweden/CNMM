@@ -38,8 +38,7 @@ INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Foot
 VALUES(N'GREENHOUSEGAS',N'greenhouse gas',N'Greenhouse gas',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'GREENHOUSEGAS',N'växthusgas',N'script',GETDATE());
 
--- LAND USE
+-- LAND USE CLASS
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
-VALUES(N'LANDUSE',N'land use',N'Land use',null,N'N',N'script',GETDATE());
-INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'LANDUSE',N'markanvändning',N'script',GETDATE());
-
+VALUES(N'LANDUSECLASS',N'land use',N'Land use',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'LANDUSECLASS',N'markanvändning',N'script',GETDATE());
