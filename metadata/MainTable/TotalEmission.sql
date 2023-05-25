@@ -1,8 +1,8 @@
 -- Creates the MainTable
 INSERT INTO [dbo].[MainTable]([MainTable],[TableStatus],[PresText],[PresTextS],[ContentsVariable],[TableId],[PresCategory],[FirstPublished],[SpecCharExists],[SubjectCode],[MetaId],[ProductCode],[TimeScale],[UserId],[LogDate]) 
 VALUES(N'TotalEmission',N'A',N'Total emissions and removals of greenhouse gases by greenhouse gas and sector. Year',null,null,N'TAB004',N'O',null,N'N',N'EN',null,N'ENVIRONMENT',N'Year',N'script',GETDATE());
-INSERT INTO [dbo].[MainTable_Sve]([MainTable],[Status],[Published],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) 
-VALUES(N'TotalEmission',N'T',N'Y',N'Totala utsläpp och upptag av växthusgaser efter växthusgas och sektor.  År',null,null,N'script',GETDATE());
+INSERT INTO [dbo].[MainTable_Sve]([MainTable],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) 
+VALUES(N'TotalEmission',N'Totala utsläpp och upptag av växthusgaser efter växthusgas och sektor.  År',null,null,N'script',GETDATE());
 
 -- Set translation status
 INSERT INTO [dbo].[SecondaryLanguage]([MainTable],[Language],[CompletelyTranslated],[Published],[UserId],[LogDate]) VALUES(N'TotalEmission',N'sv',N'Y',N'Y',N'script',GETDATE());

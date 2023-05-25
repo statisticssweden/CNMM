@@ -1,8 +1,8 @@
 -- Creates the MainTable
 INSERT INTO [dbo].[MainTable]([MainTable],[TableStatus],[PresText],[PresTextS],[ContentsVariable],[TableId],[PresCategory],[FirstPublished],[SpecCharExists],[SubjectCode],[MetaId],[ProductCode],[TimeScale],[UserId],[LogDate]) 
 VALUES(N'LANDUSE',N'A',N'Land use in Sweden by municipality and land use category. Every fifth year',null,null,N'TAB005',N'O',null,N'N',N'EN',null,N'ENVIRONMENT',N'Year',N'script',GETDATE());
-INSERT INTO [dbo].[MainTable_Sve]([MainTable],[Status],[Published],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) 
-VALUES(N'LANDUSE',N'T',N'Y',N'Markanvändningen i Sverige efter kommun och markanvändningsklass. Vart 5:e år',null,null,N'script',GETDATE());
+INSERT INTO [dbo].[MainTable_Sve]([MainTable],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) 
+VALUES(N'LANDUSE',N'Markanvändningen i Sverige efter kommun och markanvändningsklass. Vart 5:e år',null,null,N'script',GETDATE());
 
 -- Set translation status
 INSERT INTO [dbo].[SecondaryLanguage]([MainTable],[Language],[CompletelyTranslated],[Published],[UserId],[LogDate]) VALUES(N'LANDUSE',N'sv',N'Y',N'Y',N'script',GETDATE());

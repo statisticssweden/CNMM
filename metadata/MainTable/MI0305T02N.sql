@@ -1,8 +1,8 @@
 -- Creates the MainTable
 INSERT INTO [dbo].[MainTable]([MainTable],[TableStatus],[PresText],[PresTextS],[ContentsVariable],[TableId],[PresCategory],[FirstPublished],[SpecCharExists],[SubjectCode],[MetaId],[ProductCode],[TimeScale],[UserId],[LogDate]) 
 VALUES(N'MI0305T02N',N'A',N'Treated waste by treatment category and waste category. Every second year',N'Disposal facilities',null,N'TAB003',N'O',null,N'N',N'EN',null,N'ENVIRONMENT',N'Year',N'script',GETDATE());
-INSERT INTO [dbo].[MainTable_Sve]([MainTable],[Status],[Published],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) 
-VALUES(N'MI0305T02N',N'T',N'Y',N'Behandlat avfall efter typ av behandling och avfallsslag. Vartannat år',null,null,N'script',GETDATE());
+INSERT INTO [dbo].[MainTable_Sve]([MainTable],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) 
+VALUES(N'MI0305T02N',N'Behandlat avfall efter typ av behandling och avfallsslag. Vartannat år',null,null,N'script',GETDATE());
 
 -- Set translation status
 INSERT INTO [dbo].[SecondaryLanguage]([MainTable],[Language],[CompletelyTranslated],[Published],[UserId],[LogDate]) VALUES(N'MI0305T02N',N'sv',N'Y',N'Y',N'script',GETDATE());

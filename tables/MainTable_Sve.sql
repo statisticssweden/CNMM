@@ -1,7 +1,5 @@
 ﻿CREATE TABLE MainTable_Sve ( 
 	MainTable varchar(20) NOT NULL,
-	Status char(1) NOT NULL,
-	Published char(1) NOT NULL,
 	PresText varchar(250),
 	PresTextS varchar(150),
 	ContentsVariable varchar(80),
