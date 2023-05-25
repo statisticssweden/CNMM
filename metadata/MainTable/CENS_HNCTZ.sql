@@ -1,6 +1,6 @@
 -- Creates the MainTable
 INSERT INTO [dbo].[MainTable]([MainTable],[TableStatus],[PresText],[PresTextS],[ContentsVariable],[TableId],[PresCategory],[FirstPublished],[SpecCharExists],[SubjectCode],[MetaId],[ProductCode],[TimeScale],[UserId],[LogDate]) VALUES(N'CENS_HNCTZ',N'A',N'Population by sex, age and citizenship',N'Population',null,N'TAB002',N'O',null,N'N',N'PO',null,N'CENSUS',N'Year',N'script',GETDATE());
-INSERT INTO [dbo].[MainTable_Sve]([MainTable],[Status],[Published],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) VALUES(N'CENS_HNCTZ',N'T',N'Y',N'Folkmängd efter kön, ålder och medborgarskap',N'Folkmängden',null,N'script',GETDATE());
+INSERT INTO [dbo].[MainTable_Sve]([MainTable],[PresText],[PresTextS],[ContentsVariable],[UserId],[LogDate]) VALUES(N'CENS_HNCTZ',N'Folkmängd efter kön, ålder och medborgarskap',N'Folkmängden',null,N'script',GETDATE());
 
 -- Set translation status
 INSERT INTO [dbo].[SecondaryLanguage]([MainTable],[Language],[CompletelyTranslated],[Published],[UserId],[LogDate]) VALUES(N'CENS_HNCTZ',N'sv',N'Y',N'Y',N'script',GETDATE());
