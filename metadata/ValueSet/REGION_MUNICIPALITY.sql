@@ -4,6 +4,9 @@ VALUES(N'REGION_MUNICIPALITY', N'region municipality', N'Region municipality', N
 INSERT INTO [dbo].[ValueSet_Sve]([ValueSet],[PresText],[Description],[UserId],[LogDate]) 
 VALUES(N'REGION_MUNICIPALITY', N'region kommun', N'Region kommun', N'script',GETDATE());
 
+--Groupings
+INSERT INTO [dbo].[ValueSetGrouping]([ValueSet],[Grouping],[UserId],[LogDate]) VALUES ('REGION_MUNICIPALITY','M2C','script',GETDATE());
+
 --Create connection to valueset for values
 INSERT INTO [dbo].[VSValue]([ValueSet],[ValuePool],[ValueCode],[SortCode],[UserId],[LogDate]) VALUES('REGION_MUNICIPALITY','REGION','0114', '0114','script',GETDATE());
 INSERT INTO [dbo].[VSValue]([ValueSet],[ValuePool],[ValueCode],[SortCode],[UserId],[LogDate]) VALUES('REGION_MUNICIPALITY','REGION','0115', '0115','script',GETDATE());

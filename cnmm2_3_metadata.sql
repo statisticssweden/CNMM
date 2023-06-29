@@ -14,5 +14,7 @@ GO
 :r metadata/MenuSelection.sql
 
 :r metadata/ValuePool.sql
+:r metadata/Grouping.sql
 :r metadata/ValueSet.sql
+:r metadata/ValueGroup.sql
 :r metadata/MainTable.sql
