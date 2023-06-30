@@ -296,6 +296,29 @@ INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS]
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','2583', '2583',null,null, 'Haparanda',null,'N','script',GETDATE());
 INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','2584', '2584',null,null, 'Kiruna',null,'N','script',GETDATE());
 
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','01', '01',null,null, 'Stockholm county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','03', '03',null,null, 'Uppsala county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','04', '04',null,null, 'Södermanland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','05', '05',null,null, 'Östergötland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','06', '06',null,null, 'Jönköping county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','07', '07',null,null, 'Kronoberg county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','08', '08',null,null, 'Kalmar county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','09', '09',null,null, 'Gotland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','10', '10',null,null, 'Blekinge county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','12', '12',null,null, 'Skåne county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','13', '13',null,null, 'Halland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','14', '14',null,null, 'Västra Götaland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','17', '17',null,null, 'Värmland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','18', '18',null,null, 'Örebro county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','19', '19',null,null, 'Västmanland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','20', '20',null,null, 'Dalarna county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','21', '21',null,null, 'Gävleborg county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','22', '22',null,null, 'Västernorrland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','23', '23',null,null, 'Jämtland county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','24', '24',null,null, 'Västerbotten county',null,'N','script',GETDATE());
+INSERT INTO [dbo].[Value]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[MetaId],[Footnote],[UserId],[LogDate])VALUES('REGION','25', '25',null,null, 'Norrbotten county',null,'N','script',GETDATE());
+
+
 INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','00', '00',null,null, 'Riket','script',GETDATE());
 INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','0114', '0114',null,null, 'Upplands Väsby','script',GETDATE());
 INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','0115', '0115',null,null, 'Vallentuna','script',GETDATE());
@@ -587,3 +610,25 @@ INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTe
 INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','2582', '2582',null,null, 'Boden','script',GETDATE());
 INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','2583', '2583',null,null, 'Haparanda','script',GETDATE());
 INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','2584', '2584',null,null, 'Kiruna','script',GETDATE());
+
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','01', '01',null,null, 'Stockholms län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','03', '03',null,null, 'Uppsala län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','04', '04',null,null, 'Södermanlands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','05', '05',null,null, 'Östergötlands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','06', '06',null,null, 'Jönköpings län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','07', '07',null,null, 'Kronobergs län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','08', '08',null,null, 'Kalmar län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','09', '09',null,null, 'Gotlands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','10', '10',null,null, 'Blekinge län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','12', '12',null,null, 'Skåne län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','13', '13',null,null, 'Hallands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','14', '14',null,null, 'Västra Götalands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','17', '17',null,null, 'Värmlands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','18', '18',null,null, 'Örebro län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','19', '19',null,null, 'Västmanlands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','20', '20',null,null, 'Dalarnas län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','21', '21',null,null, 'Gävleborgs län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','22', '22',null,null, 'Västernorrlands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','23', '23',null,null, 'Jämtlands län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','24', '24',null,null, 'Västerbottens län','script',GETDATE());
+INSERT INTO [dbo].[Value_Sve]([ValuePool],[ValueCode],[SortCode],[Unit],[ValueTextS],[ValueTextL],[UserId],[LogDate])VALUES('REGION','25', '25',null,null, 'Norrbottens län','script',GETDATE());
