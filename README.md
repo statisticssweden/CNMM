@@ -7,7 +7,7 @@ Make sure you have docker installed and working properly
 ### Step 1 - clone the repository
 From a command prompt run
 ```
-git clone https://github.com/likp/CNMM.git
+git clone https://github.com/statisticssweden/CNMM.git
 ```
 to clone the repository
 
