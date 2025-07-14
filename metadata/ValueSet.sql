@@ -9,3 +9,4 @@
 :r metadata/ValueSet/LANDUSE.sql
 :r metadata/ValueSet/REGION_COUNTRY.sql
 :r metadata/ValueSet/REGION_MUNICIPALITY.sql
+:r metadata/ValueSet/INTERFACE.sql
