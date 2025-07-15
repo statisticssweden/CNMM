@@ -10,3 +10,5 @@
 :r metadata/ValueSet/REGION_COUNTRY.sql
 :r metadata/ValueSet/REGION_MUNICIPALITY.sql
 :r metadata/ValueSet/INTERFACE.sql
+:r metadata/ValueSet/SUBJECTAREA.sql
+:r metadata/ValueSet/LANGUAGE_SSD.sql

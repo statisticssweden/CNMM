@@ -52,10 +52,10 @@ INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUE
 
 -- SUBJECTAREA
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
-VALUES(N'SUBJECTAREA',N'language',N'subject area',null,N'N',N'script',GETDATE());
+VALUES(N'SUBJECTAREA',N'subject area',N'subject area',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'SUBJECTAREA',N'ämnesområde',N'script',GETDATE());
 
 -- INTERFACE
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
-VALUES(N'INTERFACE',N'language',N'interface',null,N'N',N'script',GETDATE());
+VALUES(N'INTERFACE',N'interface',N'interface',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'INTERFACE',N'gränssnitt',N'script',GETDATE());
