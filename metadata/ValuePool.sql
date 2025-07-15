@@ -8,3 +8,6 @@
 :r metadata/ValuePool/GREENHOUSEGAS.sql
 :r metadata/ValuePool/LANDUSE.sql
 :r metadata/ValuePool/REGION.sql
+:r metadata/ValuePool/INTERFACE.sql
+:r metadata/ValuePool/SUBJECTAREA.sql
+:r metadata/ValuePool/LANGUAGE.sql

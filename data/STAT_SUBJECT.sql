@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[STAT_SUBJECT](
+	[LANGUAGE] [char](2) NOT NULL,
+	[INTERFACE] [char](6) NOT NULL,
+	[SUBJECTAREA] [char](2) NOT NULL,
+	[TIME] [char](7) NOT NULL,	
+	[CALLS] [int] NULL
+) ON [PRIMARY];

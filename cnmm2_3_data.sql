@@ -7,4 +7,5 @@ GO
 :r data/MI0305T02N.sql
 :r data/TotalEmission.sql
 :r data/LANDUSE.sql
+:r data/STAT_SUBJECT.sql
 

@@ -42,3 +42,20 @@ INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUE
 INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
 VALUES(N'LANDUSECLASS',N'land use',N'Land use',null,N'N',N'script',GETDATE());
 INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'LANDUSECLASS',N'markanvändning',N'script',GETDATE());
+
+
+
+-- LANGUAGE
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'LANGUAGE',N'language',N'Language that is used',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'LANGUAGE',N'språk',N'script',GETDATE());
+
+-- SUBJECTAREA
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'SUBJECTAREA',N'subject area',N'subject area',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'SUBJECTAREA',N'ämnesområde',N'script',GETDATE());
+
+-- INTERFACE
+INSERT INTO [dbo].[Variable]([Variable],[PresText],[VariableInfo],[MetaId],[Footnote],[UserId],[LogDate]) 
+VALUES(N'INTERFACE',N'interface',N'interface',null,N'N',N'script',GETDATE());
+INSERT INTO [dbo].[Variable_Sve]([Variable],[PresText],[UserId],[LogDate]) VALUES(N'INTERFACE',N'gränssnitt',N'script',GETDATE());
