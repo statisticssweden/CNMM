@@ -1,21 +1,27 @@
-#run the setup script to create the DB and the schema in the DB
-#do this in a loop because the timing for when the SQL instance is ready is indeterminate
-for i in {1..50};
-do
-    # -N enables encryption (ODBC 18 has Encrypt=Yes by default, but we keep it explicit)
-    # -C trusts the server certificate (only acceptable in dev)
-    /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -d master -i setup.sql -N -C
-    if [ $? -eq 0 ]
-    then
-        echo "setup.sql completed"
-        # sleep 60
+#!/usr/bin/env bash
+set -euo pipefail
 
-        break
-    else
-        echo "not ready yet..."
-        sleep 1
-    fi
-done
+: "${SA_PASSWORD:?SA_PASSWORD is required}"
 
-#import the data from the csv file
-# /opt/mssql-tools18/bin/bcp DemoData.dbo.Products in "/usr/src/app/Products.csv" -c -t',' -S localhost -U sa -P $SA_PASSWORD
+sqlcmd() {
+  # -N enables encryption (ODBC 18 has Encrypt=Yes by default, but we keep it explicit)
+  # -C trusts the server certificate (only acceptable in dev)
+  /opt/mssql-tools18/bin/sqlcmd -U sa -P "$SA_PASSWORD" -S localhost -N -C "$@"
+}
+
+pingDb() {
+  sqlcmd -Q "SELECT 1" >/dev/null
+}
+
+waitForDb() {
+  for i in {1..30} ; do
+    echo "Pinging database ${i}..."
+    pingDb && return 0
+    sleep 2
+  done
+  echo "Failed connecting" >&2
+  return 1
+}
+
+waitForDb
+sqlcmd -d master -i setup.sql
