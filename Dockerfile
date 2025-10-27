@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 # Bundle app source
 COPY . /usr/src/app
 
-ENTRYPOINT /bin/bash ./entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]
