@@ -10,6 +10,8 @@ GO
 :r cnmm2_3.sql
 GO
 
+SET NOCOUNT ON;
+
 :r cnmm2_3_metadata.sql
 GO
 
