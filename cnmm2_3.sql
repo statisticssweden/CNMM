@@ -1,4 +1,4 @@
-PRINT N'Creating Tables...';
+PRINT N'Start creating schema...';
 
 :r tables/MetaAdm.sql
 :r tables/MetabaseInfo.sql
@@ -65,3 +65,4 @@ PRINT N'Creating Tables...';
 :r tables/FootnoteValueSetValue.sql
 :r tables/FootnoteVariable.sql
 
+PRINT N'Done creating schema.';

@@ -1,6 +1,4 @@
-PRINT N'Importing data...';
-
-GO
+PRINT N'Start importing sample data...';
 
 :r data/CENS_HNMGA.sql
 :r data/CENS_HNCTZ.sql
@@ -8,3 +6,4 @@ GO
 :r data/TotalEmission.sql
 :r data/LANDUSE.sql
 
+PRINT N'Done importing sample data.';

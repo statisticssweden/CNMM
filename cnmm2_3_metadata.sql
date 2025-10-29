@@ -1,6 +1,4 @@
-PRINT N'Importing metadata...';
-
-GO
+PRINT N'Start importing sample metadata...';
 
 :r metadata/MetaAdm.sql
 :r metadata/MetabaseInfo.sql
@@ -18,3 +16,5 @@ GO
 :r metadata/ValueSet.sql
 :r metadata/ValueGroup.sql
 :r metadata/MainTable.sql
+
+PRINT N'Done importing sample metadata.';
