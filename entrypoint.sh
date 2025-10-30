@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-#start SQL Server, start the script to create the DB and import the data, start the app
-/usr/src/app/import-data.sh & /opt/mssql/bin/sqlservr 
+# Start patiently polling import script in the background
+/usr/src/app/import-data.sh &
+
+# Start SQL Server in the foreground
+/opt/mssql/bin/sqlservr
