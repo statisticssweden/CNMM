@@ -25,4 +25,6 @@ waitForDb() {
 }
 
 waitForDb
-sqlcmd -d master -i setup.sql
+sqlcmd -d master -i setup-schema.ddl
+sqlcmd -d master -i setup-sample-metadata.sql
+sqlcmd -d master -i setup-sample-data.sql

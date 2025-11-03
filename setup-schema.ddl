@@ -9,14 +9,3 @@ GO
 
 :r cnmm2_3.sql
 GO
-
-SET NOCOUNT ON;
-
-:r cnmm2_3_metadata.sql
-GO
-
-USE [Data]
-GO
-
-:r cnmm2_3_data.sql
-GO
