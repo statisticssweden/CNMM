@@ -24,7 +24,24 @@ waitForDb() {
   return 1
 }
 
+run_step() {
+  local script="$1"
+  local marker="$2"
+  if [[ -f "$marker" ]]; then
+    echo "Skipping $script (marker $marker exists)."
+    return 0
+  fi
+  echo "Running $script..."
+  if sqlcmd -d master -i "$script"; then
+    date -u +"%Y-%m-%dT%H:%M:%SZ" > "$marker"
+    echo "Completed $script; wrote marker $marker."
+  else
+    echo "Failed $script" >&2
+    return 1
+  fi
+}
+
 waitForDb
-sqlcmd -d master -i setup-schema.ddl
-sqlcmd -d master -i setup-sample-metadata.sql
-sqlcmd -d master -i setup-sample-data.sql
+run_step setup-schema.ddl done/schema
+run_step setup-sample-metadata.sql done/sample-metadata
+run_step setup-sample-data.sql done/sample-data
