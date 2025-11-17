@@ -6,7 +6,8 @@ set -euo pipefail
 sqlcmd() {
   # -N enables encryption (ODBC 18 has Encrypt=Yes by default, but we keep it explicit)
   # -C trusts the server certificate (only acceptable in dev)
-  /opt/mssql-tools18/bin/sqlcmd -U sa -P "$SA_PASSWORD" -S localhost -N -C "$@"
+  # -b exit and return status when an error occurs (https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility?view=sql-server-ver15&tabs=go%2Cwindows-support&pivots=cs1-bash#-b)
+  /opt/mssql-tools18/bin/sqlcmd -U sa -P "$SA_PASSWORD" -S localhost -N -C -b "$@"
 }
 
 pingDb() {
