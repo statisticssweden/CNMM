@@ -3,5 +3,5 @@ GO
 
 SET NOCOUNT ON;
 
-:r cnmm2_3_data.sql
+:r cnmm.Data.all.sql
 GO

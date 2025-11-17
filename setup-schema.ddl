@@ -7,5 +7,5 @@ GO
 USE Metabase
 GO
 
-:r cnmm2_3.sql
+:r cnmm.Metabase.schema.ddl
 GO
